@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.indentSize": 2,
+  "editor.detectIndentation": true,
+  "editor.useTabStops": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "[javascript, typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
