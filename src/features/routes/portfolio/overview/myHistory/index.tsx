@@ -12,10 +12,10 @@ export default function MyHistory({ xs }: { xs: number }) {
       ys={1}
       xfs={1}
       yfs={1}
-      className="relative h-full overflow-y-scroll rounded-md border-black border-[0.5px]"
+      className="relative h-full overflow-y-scroll rounded-md border-black dark:border-white border-[0.5px]"
     >
       <HistoryContainer>
-        <Box className="pl-[1.25vw] ml-[2vw] my-5 border-l-[0.5vw] z-0">
+        <Box className="pl-[1.25vw] ml-[2vw] my-5 border-l-[0.5vw] border-purple-700 z-0">
           {MyHistory.map((item) => (
             <Grid
               container
@@ -28,7 +28,7 @@ export default function MyHistory({ xs }: { xs: number }) {
             >
               <Grid container xs={1} ys={2} xfs={1} yfs={2} className="h-full">
                 <Grid xs={1} ys={1} xfs={1} yfs={1} className="content-center">
-                  <Box className="flex self-center justify-center items-center text-white bg-black rounded-full size-[2vw]">
+                  <Box className="flex self-center justify-center items-center text-black bg-white dark:bg-slate-900 border-2 border-black dark:border-white rounded-full size-[2vw]">
                     {/** TODO Add Icon for each history by event type */}
                   </Box>
                 </Grid>

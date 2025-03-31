@@ -28,7 +28,7 @@ interface TypographyProps extends HTMLAttributes<HTMLParagraphElement> {
 export default function Typography({ size, textAlign, children, ...props }: TypographyProps) {
   const appliedStyle = `${dynamicTextSize[`${size ? size : "default"}`]} ${dynamicTextAlign[`${textAlign ? textAlign : "start"}`]} ${props.className}`;
   return (
-    <p {...props} className={appliedStyle}>
+    <p {...props} className={`text-black dark:text-white ${appliedStyle}`}>
       {children}
     </p>
   );

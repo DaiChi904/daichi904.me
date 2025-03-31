@@ -18,7 +18,7 @@ export default function Navigation() {
       ys={1}
       xfs={9}
       yfs={1}
-      className="fixed items-center justify-center m-0 p-0 h-10 top-0 left-0 right-0 shadow-md bg-gradient-to-r from-purple-100 to-purple-50 border-b-4 border-opacity-80 border-purple-700"
+      className="fixed items-center justify-center m-0 p-0 h-10 top-0 left-0 right-0 shadow-md bg-gradient-to-r from-purple-100 to-purple-50 dark:from-slate-900 dark:to-slate-800 border-b-4 border-opacity-80 border-purple-700"
     >
       <Typography className={`${HomemadeApple.className} pt-4 pl-4`} size="medium">
         DaiChi

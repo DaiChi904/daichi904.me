@@ -31,7 +31,7 @@ export default function TabSelectionButton({ tab, children }: Props) {
   return (
     <Button
       onClick={() => router.push(`${pathname}?${createQueryString("tab", tab)}`)}
-      className={`w-1/3 h-full shadow-md border-black border-[0.5px] ${searchParams.get("tab") === tab ? "bg-purple-300 border-b-4 border-b-purple-600" : "bg-white"}`}
+      className={`w-1/3 h-full shadow-md border-black border-[0.5px] ${searchParams.get("tab") === tab ? "bg-purple-300 dark:bg-slate-700 border-b-4 border-b-purple-600  dark:border-white" : "bg-white dark:bg-slate-800 dark:border-white"}`}
     >
       <Typography size="medium" textAlign="center">
         {children}

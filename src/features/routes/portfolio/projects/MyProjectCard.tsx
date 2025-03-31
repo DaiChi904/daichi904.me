@@ -15,7 +15,7 @@ export function MyProjectCard({ name, description, repositoryLink, haveCooperate
       <Typography>{description}</Typography>
       <Typography>{!haveCooperated ? "独自プロジェクト" : "他人との共同プロジェクト"}</Typography>
       {repositoryLink && (
-        <Typography className="hover:text-purple-500">
+        <Typography className="hover:text-purple-500 dark:hover:text-purple-500">
           <Link href={repositoryLink}>リポジトリを確認する</Link>
         </Typography>
       )}

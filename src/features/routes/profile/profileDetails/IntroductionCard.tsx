@@ -1,7 +1,10 @@
+"use client";
+
 import { Box, Grid, Typography } from "@/components/atoms";
 import Button from "@/components/atoms/Button";
 import { ListItem } from "@/components/atoms/list";
 import NoStyledList from "@/components/atoms/list/NoStyledList";
+import { useTheme } from "@/hooks/useTheme";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -64,6 +67,7 @@ export function OthersCard({ xs, ys }: Props) {
 }
 
 export function GithubCard({ xs, ys }: Props) {
+  const { theme } = useTheme();
   return (
     <Link href={"https://github.com/DaiChi904"}>
       <IntroductionCard xs={xs} ys={ys} verticalCenter noPadding>
@@ -73,9 +77,9 @@ export function GithubCard({ xs, ys }: Props) {
               <Image
                 width={1000}
                 height={1000}
-                src="/logos/github/github-mark.svg"
+                src={theme === "light" ? "/logos/github/github-mark.svg" : "/logos/github/github-mark-white.svg"}
                 alt="github logo"
-                className="flex size-fit"
+                className="flex size-fit dark:white"
               />
             </Grid>
             <Grid xs={3} ys={1} xfs={1} yfs={1}>

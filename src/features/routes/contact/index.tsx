@@ -1,8 +1,12 @@
+"use client";
+
 import { Grid } from "@/components/atoms";
 import BaseContainer from "@/components/layouts/BaseContainer";
 import { ContactCard, ContactCardWithLink } from "./ContactCard";
+import { useTheme } from "@/hooks/useTheme";
 
 export default function ContactPageLayout() {
+  const { theme } = useTheme();
   return (
     <BaseContainer>
       <Grid container xs={1} ys={1} xfs={1} yfs={2} className="grow gap-10 p-10">
@@ -12,7 +16,7 @@ export default function ContactPageLayout() {
           detail="daichi904.22219@gmail.com"
         />
         <ContactCardWithLink
-          iconSrc="/logos/github/github-mark.svg"
+          iconSrc={theme === "light" ? "/logos/github/github-mark.svg" : "/logos/github/github-mark-white.svg"}
           label="Github"
           detail="View profile of github"
           href="https://github.com/DaiChi904"

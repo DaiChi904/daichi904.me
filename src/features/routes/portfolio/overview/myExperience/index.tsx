@@ -10,7 +10,7 @@ export default function MyExperience({ xs }: { xs: number }) {
       ys={1}
       xfs={1}
       yfs={1}
-      className="relative h-full overflow-y-scroll rounded-md border-black border-[0.5px]"
+      className="relative h-full overflow-y-scroll rounded-md border-black dark:border-white border-[0.5px]"
     >
       <ExperienceContainer>
         {experience.map((item) => (

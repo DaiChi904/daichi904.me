@@ -16,7 +16,7 @@ export default function NaviButton({ href, children }: Props) {
   return (
     <Grid xs={1} ys={1} xfs={1} yfs={1} className="size-full">
       <Button
-        className={`size-full ${pathname === href.substring(0, href.indexOf("?") !== -1 ? href.indexOf("?") : undefined) && "bg-purple-300"}`}
+        className={`size-full ${pathname === href.substring(0, href.indexOf("?") !== -1 ? href.indexOf("?") : undefined) && "bg-purple-300 dark:bg-slate-700"}`}
       >
         <Link href={href} className="block text-center font-bold">
           {children}

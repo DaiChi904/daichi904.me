@@ -7,7 +7,7 @@ interface OrederedListProps extends HTMLAttributes<HTMLOListElement> {
 
 export default function OrederedList({ type, start, children, ...props }: OrederedListProps) {
   return (
-    <ol {...props} type={type} start={start}>
+    <ol {...props} className={`text-black dark:text-white ${props.className}`} type={type} start={start}>
       {children}
     </ol>
   );
