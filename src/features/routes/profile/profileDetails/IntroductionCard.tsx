@@ -49,9 +49,7 @@ export function FavoriteLanguageCard({ xs, ys }: Props) {
   return (
     <IntroductionCard xs={xs} ys={ys}>
       <Typography size="medium">好きな言語</Typography>
-      <Typography>
-        TypeScriptが一番好きです。
-      </Typography>
+      <Typography>TypeScriptが一番好きです。</Typography>
     </IntroductionCard>
   );
 }

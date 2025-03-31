@@ -10,9 +10,7 @@ export const experience: Experience[] = [
   {
     label: "CSS",
     iconSrc: "/logos/css/css.svg",
-    details: [
-      "完全に理解しました",
-    ],
+    details: ["完全に理解しました"],
   },
   {
     label: "JavaScript",

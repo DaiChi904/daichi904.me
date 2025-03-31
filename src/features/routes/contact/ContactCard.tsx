@@ -12,7 +12,14 @@ interface Props {
 export function ContactCard({ iconSrc, label, detail }: Props) {
   return (
     <Grid container xs={1} ys={1} xfs={1} yfs={1} className="size-full">
-      <Grid container xs={1} ys={1} xfs={7} yfs={5} className="grid-flow-col p-2 border-[0.5px] border-black rounded-md">
+      <Grid
+        container
+        xs={1}
+        ys={1}
+        xfs={7}
+        yfs={5}
+        className="grid-flow-col p-2 border-[0.5px] border-black rounded-md"
+      >
         <Grid xs={2} ys={3} xfs={1} yfs={1} className="justify-items-center content-center">
           <Image width={1000} height={1000} src={iconSrc} alt="icon" className="size-fit max-w-24 max-h-24" />
         </Grid>

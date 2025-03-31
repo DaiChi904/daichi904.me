@@ -33,7 +33,13 @@ export default function MyHistory({ xs }: { xs: number }) {
                   </Box>
                 </Grid>
               </Grid>
-              <Grid xs={5} ys={1} xfs={1} yfs={1} className="content-center justify-center  border-b-2 border-purple-700">
+              <Grid
+                xs={5}
+                ys={1}
+                xfs={1}
+                yfs={1}
+                className="content-center justify-center  border-b-2 border-purple-700"
+              >
                 <Typography>{getDateString(item.date.time, item.date.roughly)}</Typography>
                 <Typography>{item.shortDescription}</Typography>
               </Grid>
