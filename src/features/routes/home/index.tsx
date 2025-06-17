@@ -9,7 +9,6 @@ export default function HomePageLayout() {
         <Typography size="largePlus">DaiChi</Typography>
         <HomeNaviButton href="/profile">About me</HomeNaviButton>
         <HomeNaviButton href="/portfolio?tab=overview">Portfolio</HomeNaviButton>
-        <HomeNaviButton href="/blog">Blog</HomeNaviButton>
         <HomeNaviButton href="/contact">Contact</HomeNaviButton>
       </Box>
     </BaseContainer>

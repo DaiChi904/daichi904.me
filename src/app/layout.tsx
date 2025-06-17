@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${NotoSansJP.className} antialiased bg-gradient-to-r from-purple-50 via-slate-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900`}>
+      <body
+        className={`${NotoSansJP.className} antialiased bg-gradient-to-r from-purple-50 via-slate-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900`}
+      >
         <BaseLayout>
           <Navigation />
           {children}

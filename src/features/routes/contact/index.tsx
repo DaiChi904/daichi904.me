@@ -2,8 +2,8 @@
 
 import { Grid } from "@/components/atoms";
 import BaseContainer from "@/components/layouts/BaseContainer";
-import { ContactCard, ContactCardWithLink } from "./ContactCard";
 import { useTheme } from "@/hooks/useTheme";
+import { ContactCard, ContactCardWithLink } from "./ContactCard";
 
 export default function ContactPageLayout() {
   const { theme } = useTheme();
